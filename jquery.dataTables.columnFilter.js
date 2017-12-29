@@ -334,7 +334,7 @@
                 currentFilter = oSelected;
 
             var selectId = "select" + sLabel.split(" ").join('');
-            var r = '<select id="' + selectId + '" class="search_init select_filter form-control" rel="' + i + '"><option value="" class="search_init"> Filtrar ' + sLabel + '</option>';
+            var r = '<select id="' + selectId + '" class="search_init select_filter form-control" rel="' + i + '"><option value="" class="search_init"> Filter ' + sLabel + '</option>';
             if (bMultiselect) {
                 r = '<select id="' + selectId + '" class="search_init select_filter form-control" rel="' + i + '" multiple="multiple">';
             }
@@ -729,7 +729,7 @@
 
                 if (aoColumn.type == "select") {
                     label = $($(this)[0].cell)[0].innerText; //Fix for Dropdown
-                    label = label.trim('\n').replace('Filtrar ', '');
+                    label = label.trim('\n').replace('Filter ', '');
                 } else {
                     //label = $(this).text(); //Before fix for ColVis
                     label = $($(this)[0].cell).text(); //Fix for ColVis
